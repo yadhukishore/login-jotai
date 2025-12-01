@@ -1,0 +1,17 @@
+.toastContainer {
+    @apply pointer-events-none !z-[10000];
+    :global {
+        .toast {
+            @apply rounded border border-info-500 p-2.5 pe-10 w-max min-w-60 max-w-[520px] break-words;
+            &.error-toast {
+                @apply text-error border border-error !items-start;
+            }
+            &.success-toast {
+                @apply text-success-700 border border-success !items-start;
+            }
+            & > div {
+                @apply text-basic-900 text-sm font-normal !items-start justify-start ps-2 !mx-0 !my-0 w-max max-w-[calc(100%-24px)];
+            }
+        }
+    }
+}
