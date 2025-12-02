@@ -54,13 +54,13 @@ export default function Sidebar() {
   }, [isMenuOpen]);
 
   const handleMenuClick = (menuKey) => {
-    // Always set the active menu and open the submenu
+
     setActiveMenu(menuKey);
     setIsMenuOpen(true);
   };
 
   const handleSidebarClose = () => {
-    // Only for closing - set menuOpen to false and clear activeMenu
+
     setIsMenuOpen(false);
     setActiveMenu(null);
   };
