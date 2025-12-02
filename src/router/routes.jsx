@@ -10,7 +10,6 @@ import PublicRoutes from "./publicRoutes";
 import UnderConstruction from "../components/UnderConstruction";
 
 const AppRoutes = () => {
-  // Keep protected routes minimal for now. Add module routes later if needed.
   const protectedRoutes = [];
 
   const router = createBrowserRouter(

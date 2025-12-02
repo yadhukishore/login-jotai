@@ -7,11 +7,11 @@ export default function Header() {
   const [showDropdown, setShowDropdown] = useState(false);
   const dropdownRef = useRef(null);
 
-  const userData = null; // placeholder until real user data is wired
+  const userData = null; 
 
   const handleLogout = async () => {
     await logoutService();
-    // You can handle additional logic based on logout result if needed
+   
   };
 
   useEffect(() => {
