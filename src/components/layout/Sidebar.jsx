@@ -25,7 +25,6 @@ export default function Sidebar() {
     }
   });
 
-  // If the stored active menu doesn't match path, remove it from storage.
   useEffect(() => {
     try {
       const storedActiveMenu = localStorage.getItem("sidebarActiveMenu");
@@ -37,7 +36,6 @@ export default function Sidebar() {
     }
   }, [activePath]);
 
-  // Remove localStorage effect since Jotai handles storage automatically
 
   useEffect(() => {
     if (activeMenu) {
